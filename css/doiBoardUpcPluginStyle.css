@@ -1,0 +1,40 @@
+.pkp_block {
+    display: flex;
+    align-items: center;   /* Alinea verticalmente al centro */
+    gap: 5px;              /* Espacio entre cada item */
+}
+
+.pkp_block img {
+    height: 30px;
+}
+
+.btn-warning-custom {
+    display: inline-block;
+    background-color: #ffc107; /* amarillo estilo warning */
+    color: #000; /* texto negro */
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    border: 1px solid #ffc107;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+
+.btn-warning-custom:hover {
+    background-color: #e0a800; /* tono más oscuro al pasar el mouse */
+    text-decoration: none;
+}
+
+/* segundo <a> (el DOI largo) */
+.pkp_block a:nth-of-type(2) {
+    max-width: 400px;       /* límite visual */
+    display: inline-block;  /* necesario para cortar texto */
+    white-space: nowrap;    /* evita salto de línea */
+    overflow: hidden;       /* oculta el exceso */
+    text-overflow: ellipsis;/* añade “…” */
+    vertical-align: middle; /* lo mantiene centrado */
+}
