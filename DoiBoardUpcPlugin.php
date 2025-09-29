@@ -15,12 +15,7 @@
  *
  */
 
-namespace APP\plugins\generic\doiBoardUpc;
-
-use APP\core\Application;
-use APP\template\TemplateManager;
-use PKP\plugins\GenericPlugin;
-use PKP\plugins\Hook;
+import('lib.pkp.classes.plugins.GenericPlugin');
 
 class DoiBoardUpcPlugin extends GenericPlugin
 {
@@ -66,33 +61,12 @@ class DoiBoardUpcPlugin extends GenericPlugin
             //Hook::add('TemplateManager::display', array($this, 'callbackDisplayTemplate'));
 
             // Registrar directamente el hook donde quieres insertar el enlace
-            Hook::add('Templates::Article::Main', array($this, 'callbackAddLinkDoiBoard'));
+            //Hook::add('Templates::Article::Main', array($this, 'callbackAddLinkDoiBoard'));
+            HookRegistry::register('Templates::Article::Main', array(&$this, 'callbackAddLinkDoiBoard'));
         }
 
         return $success;
     }
-
-
-    public function callbackDisplayTemplate($hookName, $args) {
-        $templateMgr = $args[0];
-        $template = $args[1];
-
-        // Detect page
-        switch ($template) {
-            case 'frontend/pages/indexJournal.tpl':
-                // journal home page
-                $templateMgr->assign('miEnlaceEspecial', 'https://mi-sitio.com');
-                break;
-
-            case 'frontend/pages/article.tpl':
-                // article page
-                $templateMgr->assign('enlaceArticulo', 'https://mi-sitio.com/articulos');
-                break;
-        }
-
-        return false;
-    }
-
 
     public function callbackAddLinkDoiBoard($hookName, $args) {
         $params = $args[0];
