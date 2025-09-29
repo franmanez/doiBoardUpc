@@ -4,7 +4,7 @@
  * @file plugins/generic/doiBoardUpc/DoiBoardUpcPlugin.php
  *
  * Distributed under The MIT License. For full terms see the file LICENSE.
- * @author Fran Máñez
+ * @author Fran Máñez - fran.upc@gmail.com
  *
  * @class DoiBoardUpcPlugin
  *
