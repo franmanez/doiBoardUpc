@@ -12,7 +12,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "plugins.generic.doiBoardUpc.displayName"
-msgstr "Plugin DOIboard UPC"
+msgstr "Plugin DOIBoard UPC"
 
 msgid "plugins.generic.doiBoardUpc.description"
-msgstr "Adds a link on the article page that points to the doi.upc.edu website. This site, created by the Universitat Politècnica de Catalunya, shows detailed information about the article's DOI."
+msgstr ""
+"Adds, on the article page, a link to the 'DOIBoard Crossref UPC' website (https://doi.upc.edu). "
+"This website, implemented by UPC (Universitat Politècnica de Catalunya), is a frontend that consumes the Crossref REST API, "
+"and allows us to obtain information about DOIs registered in Crossref."
+
+msgid "plugins.generic.doiBoardUpc.title"
+msgstr "View DOI information in DOIBoard Crossref (by UPC)"

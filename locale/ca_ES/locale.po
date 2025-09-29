@@ -12,7 +12,13 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 
 msgid "plugins.generic.doiBoardUpc.displayName"
-msgstr "Módul DOIboard UPC"
+msgstr "Módul DOIBoard UPC"
 
 msgid "plugins.generic.doiBoardUpc.description"
-msgstr "Afegeix un enllaç a la pàgina de l'article que apunta al lloc web doi.upc.edu. Aquest lloc, creat per la Universitat Politècnica de Catalunya, mostra informació detallada sobre el DOI de l'article."
+msgstr ""
+"Afegeix, a la pàgina de l'article, un enllaç a la web 'DOIBoard Crossref UPC' (https://doi.upc.edu). "
+"Aquesta web, implementada per la UPC (Universitat Politècnica de Catalunya), és un frontend que consumeix l'API REST de Crossref, "
+"i ens permet obtenir informació sobre els DOIs registrats a Crossref."
+
+msgid "plugins.generic.doiBoardUpc.title"
+msgstr "Veure informació del DOI en DOIBoard Crossref (by UPC)"

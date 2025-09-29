@@ -4,7 +4,7 @@
  * @file plugins/generic/doiBoardUpc/DoiBoardUpcPlugin.php
  *
  * Distributed under The MIT License. For full terms see the file LICENSE.
- * @author Fran Máñez
+ * @author Fran Máñez - fran.upc@gmail.com
  *
  * @class DoiBoardUpcPlugin
  *
@@ -57,11 +57,6 @@ class DoiBoardUpcPlugin extends GenericPlugin
             $templateMgr = TemplateManager::getManager($request);
             $templateMgr->addStyleSheet('tutorialExampleStyles', $url, array('contexts' => 'frontend') );
 
-            // Registrar hooks usando Hook::add
-            //Hook::add('TemplateManager::display', array($this, 'callbackDisplayTemplate'));
-
-            // Registrar directamente el hook donde quieres insertar el enlace
-            //Hook::add('Templates::Article::Main', array($this, 'callbackAddLinkDoiBoard'));
             HookRegistry::register('Templates::Article::Main', array(&$this, 'callbackAddLinkDoiBoard'));
         }
 
