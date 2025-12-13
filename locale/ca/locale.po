@@ -21,4 +21,4 @@ msgstr ""
 "i ens permet obtenir informació sobre els DOIs registrats a Crossref."
 
 msgid "plugins.generic.doiBoardUpc.title"
-msgstr "Veure informació del DOI en DOIBoard Crossref (by UPC)"
+msgstr "Veure informació del DOI en DOIBoard Crossref"
